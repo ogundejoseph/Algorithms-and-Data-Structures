@@ -13,8 +13,8 @@ def recursive_binary_search(list, target):
             # If the target value is greater than the midpoint then we will create a new sub-list starting from the value after the midpoint to the end of the list
             if list[midpoint] < target:
                 return recursive_binary_search(list[midpoint+1:], target)
-            # If the target value is less than the midpoint then we will create a new sub-list starting from the beginning of the list to the midpoint
             else:
+                # If the target value is less than the midpoint then we will create a new sub-list starting from the beginning of the list to the midpoint
                 return recursive_binary_search(list[:midpoint], target)
             
 def verify(result):
